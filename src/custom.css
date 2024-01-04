@@ -1,0 +1,17 @@
+* {
+    box-sizing: border-box;
+}
+
+:root {
+    --bg-light-gray: #f2f4f6;
+}
+
+.section-heading-width{
+    max-width: 40.75rem;
+    margin: 7rem auto;
+}
+
+.bg-gray-light {
+    background: var(--bg-light-gray);
+}
+
