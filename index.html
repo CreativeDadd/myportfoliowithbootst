@@ -6,18 +6,17 @@
     <meta name="description" content="">
     <meta name="author" content="Mark Otto, Jacob Thornton, and Bootstrap contributors">
     <meta name="generator" content="Hugo 0.84.0">
-    <title>Album example · Bootstrap v5.0</title>
+    <title>Eden & Goshen's Foundation</title>
 
     <link rel="canonical" href="https://getbootstrap.com/docs/5.0/examples/album/">
+
+    <link rel="icon" href="assets/edenlogo2.jpg" type="image/x-icon">
 
     <!-- ###### Customised CSS ##### -->
     <link rel="stylesheet" href="src/custom.css">
 
-    <!-- $$$$ carousel css   $%%% -->
-    <link rel="stylesheet" href="src/carousel.css">
-
     <!-- Bootstrap core CSS -->
-<link href="../assets/dist/css/bootstrap.min.css" rel="stylesheet">
+
 
 <link rel="stylesheet" href="src/css/bootstrap.min.css">
 
@@ -25,6 +24,30 @@
 <!-- <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous"> -->
 
 <style>
+
+.hero-header {
+    /* position: relative; */
+    /* height: 500px; Adjust as needed */
+    /* background: #333; Adjust background color */
+    /* color: #fff; Adjust text color */
+    /* text-align: center; */
+}
+
+/* .subheader {
+    opacity: 0;
+    transform: translateY(50px);
+    transition: opacity 1s ease, transform 1s ease;
+}
+
+.show-subheader {
+    opacity: 1;
+    transform: translateY(0);
+} */
+
+
+
+
+
   .bd-placeholder-img {
     font-size: 1.125rem;
     text-anchor: middle;
@@ -43,109 +66,62 @@
     
   </head>
   <body>
-    
-<header>
-  <div class="collapse bg-dark" id="navbarHeader">
-    <div class="container">
-      <div class="row">
-        <div class="col-sm-3 col-md-7 py-4">
-          <h4 class="text-white">About</h4>
-          <p class="text-muted">"At EGF, our mission is clear: to transform lives through clean water access, healthcare, education, and empowerment. We dig wells, offer free medical aid, provide education, and instill skills, fostering self-reliance and sustainable communities. EdenCare believes in creating a world where basic human needs are met, where individuals flourish, and communities thrive. Join us on this journey of compassion and impact."</p>
-        </div>
-        <div class="col-sm-3 col-md-7 py-4">
-          <h4 class="text-white">Join Us</h4>
-          <p class="text-muted">"At EGF, our mission is clear: to transform lives through clean water access, healthcare, education, and empowerment. We dig wells, offer free medical aid, provide education, and instill skills, fostering self-reliance and sustainable communities. EdenCare believes in creating a world where basic human needs are met, where individuals flourish, and communities thrive. Join us on this journey of compassion and impact."</p>
-        </div>
-        <div class="col-sm-3 offset-md-1 my-4">
-          <h4 class="text-white">Navigation Links</h4>
-          <ul class="list-unstyled">
-            <li class="my-2"><a href="#education" class="text-white py-3">Education</a></li>
-            <li><a href="#" class="text-white">Health Care</a></li>
-            <li><a href="#" class="text-white">Food For The Poor</a></li>
-            <li><a href="#" class="text-white">Skill Aquisition</a></li>
-            <li><a href="#address" class="text-white">Chaiman's Address</a></li>
-            <li><a href="#address" class="text-white">Water Supply To The Needy</a></li>
-            <li><a href="#address" class="text-white">Contact Us</a></li>
+    <nav class="navbar navbar-expand-lg navbar-light  fixed-top py-2 shadow-sm px-5 nav">
+      <div class="container-fluid">
+        <a class="navbar-brand" style="width: 80px; height: 80px;" href="#"> 
+          <img src="assets/edenlogo2.jpg" alt="" style="width: 100%; height: auto;">
+        
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse bin-margin" id="navbarNavDropdown">
+          <ul class="navbar-nav lg-margin-left">
+            <li class="nav-item ms-4 fs-5">
+              <a class="nav-link active" aria-current="page" href="#home">Home</a>
+            </li>
+            <li class="nav-item ms-4 fs-5">
+              <a class="nav-link" href="#">Health Care Support</a>
+            </li>
+            <li class="nav-item ms-4 fs-5">
+              <a class="nav-link" href="#education">Education Supports</a>
+            </li>
+            <li class="nav-item dropdown ms-4 fs-5">
+              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                Support Systems
+              </a>
+              <ul class="dropdown-menu shadow-lg" aria-labelledby="navbarDropdownMenuLink">
+                <li><a class="dropdown-item" href="#">Free Skill Aquisition Programs</a></li>
+                <li><a class="dropdown-item" href="#">Borehole Drilling</a></li>
+                <li><a class="dropdown-item" href="#">Physically Challenged Cares</a></li>
+              </ul>
+            </li>
           </ul>
         </div>
       </div>
-    </div>
-  </div>
-  <div class="navbar navbar-dark bg-dark shadow-sm">
-    <div class="container">
-      <a href="#" class="navbar-brand d-flex align-items-center">
-        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" aria-hidden="true" class="me-2" viewBox="0 0 24 24"><path d="M23 19a2 2 0 0 1-2 2H3a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h4l2-3h6l2 3h4a2 2 0 0 1 2 2z"/><circle cx="12" cy="13" r="4"/></svg>
-        <strong>Album</strong>
-      </a>
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarHeader" aria-controls="navbarHeader" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-    </div>
-  </div>
-</header>
+    </nav>
 
-<main>
+    
+    <!-- $$$$ hero section  $%%% -->
 
-    <div id="myCarousel" class="carousel slide" data-bs-ride="carousel">
-      <div class="carousel-indicators">
-        <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-        <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
-        <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
-      </div>
-      <div class="carousel-inner">
-        <div class="carousel-item active">
-           <img class="bg-overlay" src="assets/edupics4.jpg" alt="children learning Together in class">
-         <!-- <svg class="bd-placeholder-img" width="100%" height="100%" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" preserveAspectRatio="xMidYMid slice" focusable="false"><rect width="100%" height="100%" fill="#777"/></svg> -->
-  
-          <div class="container">
-            <div class="carousel-caption text-start bg-overlay p-3">
-              <h1>Our Transformative Educational Support System.</h1>
-              <p>Unlocking Potential, Transforming Lives: Eden & Goshen's Foundation is on a mission to empower futures through quality education. Your support fuels our transformative education initiatives, providing essential resources for basic schooling, high school education, and university pursuits. Join us in building a brighter tomorrow, where every child has the chance to thrive. Together, we cultivate knowledge, sow seeds of opportunity, and harvest a world where education knows no bounds. Contribute today and be a catalyst for change – because every donation shapes a destiny and every child deserves a chance to bloom."</p>
-              <p><a class="btn btn-lg btn-primary" href="#">Sign up today</a></p>
-            </div>
-          </div>
-        </div>
-        <div class="carousel-item pt-5 bg-gray-light">        
-          <!-- <svg class="bd-placeholder-img" width="100%" height="100%" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" preserveAspectRatio="xMidYMid slice" focusable="false"><rect width="100%" height="100%" fill="#777"/></svg> -->
-          <div class="container">
-            <div class="row d-flex justify-content-center">
-              <div class="col-6" style="width: 40rem;">
-                <img src="assets/foodpics1.jpg" alt="feeding the poor" style="width: 100%;">
-              </div>
-            <div class=" col-sm-5 carousel-caption bg-overlay">
-              <h1>Feeding Those Who are in Need.</h1>
-              <p>Nourish Hope, Sow Change: Join us in the fight against hunger. Your support feeds more than bodies; it nourishes dreams and fuels resilience. Together, let's turn compassion into action, ensuring no one goes to bed hungry. Make a difference, one meal at a time.</p>
-              <p><a class="btn btn-lg btn-primary" href="#">Join Us</a></p>
-            </div>
-            </div>
-          </div>
-        </div>
-        <div class="carousel-item">
-          <svg class="bd-placeholder-img" width="100%" height="100%" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" preserveAspectRatio="xMidYMid slice" focusable="false"><rect width="100%" height="100%" fill="#777"/></svg>
-  
-          <div class="container">
-            <div class="carousel-caption text-end">
-              <h1>Our Free Health Supports.</h1>
-              <p>Healing Hands, Not Wounds: Choose health over strife. Support our NGO's mission for free healthcare to empower the vulnerable. Your contribution ensures that every individual, regardless of means, receives the gift of well-being. Let's build a world where compassion triumphs over affliction. Give for health, not war.</p>
-              <p>
-                <a class="btn btn-lg btn-primary" href="#">Join Us</a>
-                <a class="btn btn-lg btn-danger" href="#">Browse gallery</a>
-              </p>
-            </div>
-          </div>
+    <section class="py-5  text-center container linear-gradient">
+      <div class="row py-5">
+        <div class="col-lg-6 col-md-8 mx-auto">
+          <h1 class="fw-bold hero-header">Eden & Goshen Foundation.</h1>
+          <p class="lead text-white p-4 shadow-sm subheader">
+            "At EdenCare, our mission is clear: to transform lives through clean water access, healthcare, education, and empowerment. We dig wells, offer free medical aid, provide education, and instill skills, fostering self-reliance and sustainable communities. EdenCare believes in creating a world where basic human needs are met, where individuals flourish, and communities thrive. Join us on this journey of compassion and impact."
+          </p>
+          <p>
+            <a href="#" class="btn bg-warning
+            me-2 my-2">Join Us!</a>
+            <a href="#" class="btn btn-secondary my-2">FAQ</a>
+          </p>
         </div>
       </div>
-      <button class="carousel-control-prev" type="button" data-bs-target="#myCarousel" data-bs-slide="prev">
-        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-        <span class="visually-hidden">Previous</span>
-      </button>
-      <button class="carousel-control-next" type="button" data-bs-target="#myCarousel" data-bs-slide="next">
-        <span class="carousel-control-next-icon text-dark" aria-hidden="true"></span>
-        <span class="visually-hidden">Next</span>
-      </button>
-    </div>
-  
-  
+    </section>
+
+
+
     <!-- Marketing messaging and featurettes
     ================================================== -->
     <!-- Wrap the rest of the page in another container to center all the content. -->
@@ -153,26 +129,31 @@
     <div class="container marketing">
   
       <!-- Three columns of text below the carousel -->
-      <div class="row">
-        <div class="col-lg-4">
-          <svg class="bd-placeholder-img rounded-circle" width="140" height="140" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: 140x140" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#777"/><text x="50%" y="50%" fill="#777" dy=".3em">140x140</text></svg>
+      <div class="row mt-5">
+        <div class="col-lg-4 text-center shadow-sm pb-2 rounded pt-5">
+          
+          <img class="bd-placeholder-img rounded-circle" width="140" height="140" src="assets/eye1.jpg" alt="eyecare-image">
   
           <h2>Eye Care</h2>
           <p>Join us to bring smile into lives as we pull many out of darkness caused by eye deffects.</p>
           <p><a class="btn btn-secondary" href="#">View details... &raquo;</a></p>
-        </div><!-- /.col-lg-4 -->
-        <div class="col-lg-4">
-          <svg class="bd-placeholder-img rounded-circle" width="140" height="140" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: 140x140" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#777"/><text x="50%" y="50%" fill="#777" dy=".3em">140x140</text></svg>
+        </div>
+        <!-- /.col-lg-4 -->
+        <div class="col-lg-4 text-center shadow-sm pb-2 rounded pt-5">
+          
+          <img class="bd-placeholder-img rounded-circle" width="140" height="140" src="assets/diabetes1.png" alt="eyecare-image">
   
           <h2>Diebetes Care</h2>
           <p>The more you bless others the more you are blessed, lets help educate the society about diabetes and subsidized diabetes drugs in our communities together.</p>
           <p><a class="btn btn-secondary" href="#">View details... &raquo;</a></p>
         </div><!-- /.col-lg-4 -->
-        <div class="col-lg-4">
-          <svg class="bd-placeholder-img rounded-circle" width="140" height="140" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: 140x140" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#777"/><text x="50%" y="50%" fill="#777" dy=".3em">140x140</text></svg>
+        <div class="col-lg-4 text-center shadow-sm pb-2 rounded pt-5">
+          
+          <img class="bd-placeholder-img rounded-circle" width="140" height="140" src="assets/physical1.png" alt="eyecare-image">
+  
   
           <h2>The Physically challenged</h2>
-          <p>Experince the joy in puting smile on people's faces, the inner joy and sence of fulfilment and blessings that accoplish your giving is immersely huge.</p>
+          <p>Experince the joy in puting smile on people's faces, the inner joy and sence of fulfilment and blessings that accomplish your giving is immensely huge.</p>
           <p><a class="btn btn-secondary" href="#">View details... &raquo;</a></p>
         </div><!-- /.col-lg-4 -->
       </div><!-- /.row -->
@@ -180,50 +161,75 @@
   
       <!-- START THE FEATURETTES -->
   
-      <hr class="featurette-divider">
+      <hr class="featurette-divider mt-5">
   
-      <div class="row featurette">
-        <div class="col-md-7">
-          <h2 class="featurette-heading">Free Skill Aquisition. <br><span class="text-muted">Helping Thousands of People Reposition in Life</span></h2>
-          <p class="lead">Some great placeholder content for the first featurette here. Imagine some exciting prose here.</p>
+      <div class="row featurette mt-5">
+        <div class="col-md-7 text-center text-md-start px-5 ">
+          <h2 class="featurette-heading text-primary">Free Skill Aquisition Programs.<br><span class="fs-5 text-secondary">Helping Thousands of People Reposition in Life.</span></h2>
+          <p class="lead"> 
+            At Eden & Goshen's Foundation, we believe in breaking barriers and empowering the less privileged with the keys to a brighter future. Our mission is to provide accessible and free skill acquisition programs, opening doors to new opportunities and fostering self-sufficiency. Join us in creating a world where everyone, regardless of circumstance, can realize their full potential and contribute meaningfully to society. Together, let's build a legacy of empowerment and lasting change.</p>
         </div>
         <div class="col-md-5">
-          <svg class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto" width="500" height="500" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: 500x500" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#eee"/><text x="50%" y="50%" fill="#aaa" dy=".3em">500x500</text></svg>
+          <img src="assets/skill1.jpg" class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto" alt="learming new skills">
+  
+        </div>
+      </div>
+  
+      <hr class="featurette-divider mt-5">
+  
+      <div class="row featurette mt-5">
+        <div class="col-md-7 order-md-2 text-center text-md-end px-5">
+          <h2 class="featurette-heading text-primary">Healthcare Supports Systems.  <br> <span class="text-dark  fs-5">Healing Lives at Eden & Goshen's Foundation</span></h2>
+          <p class="lead">
+
+          At Eden & Goshen's Foundation, we extend our commitment to holistic well-being by providing vital healthcare support to the less privileged. Ensuring access to quality medical care is at the heart of our mission. Join us in fostering a healthier community, where everyone, regardless of circumstance, can embrace a life of wellness. Together, let's build a foundation of care that uplifts and empowers lives. Your support makes a difference in creating a healthier and happier tomorrow for all.</p>
+        </div>
+        <div class="col-md-5 order-md-1" id="healthcare">
+          <img class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto" width="500" height="500" src="assets/health1.jpg" alt="healthcare-image">
   
         </div>
       </div>
   
       <hr class="featurette-divider">
   
-      <div class="row featurette">
-        <div class="col-md-7 order-md-2">
-          <h2 class="featurette-heading">Oh yeah, it’s that good. <span class="text-muted">See for yourself.</span></h2>
-          <p class="lead">Another featurette? Of course. More placeholder content here to give you an idea of how this layout would work with some actual real-world content in place.</p>
-        </div>
-        <div class="col-md-5 order-md-1">
-          <svg class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto" width="500" height="500" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: 500x500" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#eee"/><text x="50%" y="50%" fill="#aaa" dy=".3em">500x500</text></svg>
-  
-        </div>
-      </div>
-  
-      <hr class="featurette-divider">
-  
-      <div class="row featurette">
-        <div class="col-md-7">
-          <h2 class="featurette-heading">And lastly, this one. <span class="text-muted">Checkmate.</span></h2>
-          <p class="lead">And yes, this is the last block of representative placeholder content. Again, not really intended to be actually read, simply here to give you a better view of what this would look like with some actual content. Your content.</p>
+      <div class="row featurette mt-5">
+        <div class="col-md-7 text-center text-md-start px-5">
+          <h2 class="featurette-heading text-primary">Feeding Program. <br> <span class="text-dark fs-5">Nourishing Hope.</span></h2>
+          <p class="lead">
+
+          We stand united in our mission to provide sustenance to those facing the harsh realities of poverty, indigence, and displacement caused by wars or natural disasters. Together, let's extend a helping hand, offering not just food, but nourishment for the soul. Join us in creating a world where no one goes to bed hungry, and every individual, regardless of their circumstances, can find solace in a warm and comforting meal. Together, we can make a difference, one plate at a time."</p>
         </div>
         <div class="col-md-5">
-          <svg class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto" width="500" height="500" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: 500x500" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#eee"/><text x="50%" y="50%" fill="#aaa" dy=".3em">500x500</text></svg>
+          <img class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto" style="width: 500px; height: 400px;" src="assets/food1.jpg" alt="food-image">
   
         </div>
       </div>
   
-      <hr class="featurette-divider">
+      <hr class="featurette-divider mt-5">
   
       <!-- /END THE FEATURETTES -->
   
-    </div><!-- /.container -->
+    </div>
+    <!-- Education section-->
+    <section id="education" class="container">
+      <div class="section-head text-center section-heading-width ">
+        <div class="h4">Education Support System</div>
+        <p class="pt-3">We encourage everyone to join us in supporting quality education for underprivileged children and youth. We also extend a warm welcome to organizations interested in fulfilling their corporate social responsibilities (CSR) by giving back to society. </p>
+      </div>
+      <div class="row">
+        <div class="col-md-7 text-center text-md-start px-5">
+          <h1 class="h2">We give good Value The Future of our community, Empowering Minds.</h1>
+          <p class="lead">
+
+            Here in Eden & Goshen's Foundation, we believe in the transformative power of education. Our commitment is to provide unwavering support to individuals seeking knowledge, regardless of their socio-economic background. Join us in shaping a brighter future by breaking down barriers to education. Together, let's cultivate a community where every mind is empowered to learn, grow, and contribute. Your support fuels the flame of education, illuminating the path to a world where opportunities are boundless and dreams become achievable realities.</p>
+          <button class="btn btn-primary my-2">Learn more...</button>
+          <button class="btn btn-secondary">Sign Up Today </button>
+        </div>
+        <div class=" col-md-5">
+          <img src="assets/picsedu3.jpg" alt="children_learning" class="img-fluid">
+        </div>
+      </div>
+    </section>
   
   
   
@@ -285,28 +291,7 @@
     </div>
   </div>
 
-  <section id="education" class="container pt-4">
-    <div class="section-head text-center section-heading-width ">
-      <div class="h4">Education Support System</div>
-      <p class="pt-3">We look towards everyone to contribute towards good education for all less priviledged children and youth. We welcome also or welcome organization who want to give back to society in cooporate social responsibilities CSR. </p>
-    </div>
-    <div class="row custom-color justify-content-center d-flex gap-5 back-2 pb-5">
-      <div class="col-sm-6" style="width: 24rem;">
-        <h1 class="h2">We give good Value The Future of our community</h1>
-        <p class="my-2">As we reac Lorem ipsum, dolor sit amet consectetur adipisicing elit. Necessitatibus, sequi nobis deserunt voluptatem accusantium sint blanditiis maxime alias mollitia iure magni at laboriosam officia ducimus in itaque perspiciatis! Exercitationem, magnam.</p>
-        <button class="btn btn-primary my-2">Learn more...</button>
-        <button class="btn btn-secondary">Sign Up Today </button>
-      </div>
-      <div class=" col-sm-6" style="width: 32rem;">
-        <img src="assets/picsedu3.jpg" alt="children_learning" class="" style="width: 100%; height: auto;">
-      </div>
-    </div>
-  </section>
-
-  <section id="feed-the-poor">
-
-
-  </section>
+  
 
 </main>
 
@@ -323,10 +308,16 @@
 
 
 <script src="src/js/bootstrap.bundle.min.js"></script>
+<script src="src/customscript.js"></script>
 <!-- <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
     <script src="../assets/dist/js/bootstrap.bundle.min.js"></script> -->
 
-      
+      <script>
+        $(document).ready(function() {
+    // Animate subheader on page load
+    $(".subheader").addClass("show-subheader");
+});
+      </script>
   </body>
 </html>

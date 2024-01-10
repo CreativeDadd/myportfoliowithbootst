@@ -4,7 +4,25 @@
 
 :root {
     --bg-light-gray: #f2f4f6;
+    --bg-dark-gray: #121212;
+    --bg-blue: #007bff;
+    --bg-blue2: #2980b9;
+    --bg-blue3: #3498db;
+    --bg-blue4: rgba(33, 97, 140, 0.204);
+    --bg-blue5: #1f618d;
+    --bg-blue6: #5dade2;
+    --bg-blue7: #21618c;
+    --text-white: #fff;
+    --lg-margin: 15rem;
 }
+
+
+
+/* #3498db (Flat Blue)
+#2980b9 (Belize Hole)
+#1f618d (Dark Blue)
+#5dade2 (Light Steel Blue)
+#21618c (Navy Blue) */
 
 .section-heading-width{
     max-width: 40.75rem;
@@ -15,3 +33,77 @@
     background: var(--bg-light-gray);
 }
 
+.bg-blue {
+    background: var(--bg-blue);
+}
+
+.bg-blue2{
+    background: var(--bg-blue2)
+}
+.bg-blue3 {
+    background: var(--bg-blue3);
+}
+
+.bg-blue4 {
+    background: var(--bg-blue4);
+
+}
+
+.bg-blue5 {
+    background: var(--bg-blue5);
+}
+
+.bg-blue6 {
+    background: var(--bg-blue6);
+}
+
+.bg-blue7 {
+    background: var(--bg-blue7);
+}
+
+.text-color-wh {
+    color: var(--text-white);
+}
+
+.big-margin {
+    margin: var(--lg-margin);
+}
+
+/* .lg-margin-left {
+    margin-left: 17em;
+} */
+
+/* the media query to move nav ul element to the right */
+@media only screen and(min-width: 950px) {
+    .lg-margin-left{
+        margin-left: 20em;
+    }
+}
+
+
+
+/*javascript  added classes */
+
+.nav{
+    background: white;
+}
+
+.nav.scrolled-nav{
+    background: linear-gradient(to right, #21618c, #5dade2, #21618c);
+    
+}
+
+.active {
+color: #007bff; 
+    font-weight: bold;
+}
+
+/* hero section  linear gradient */
+
+.linear-gradient {
+    background: linear-gradient(to right, #21618c, #5dade2, #21618c);
+
+}
+
+
+/* animate the hero section */
