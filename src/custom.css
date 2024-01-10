@@ -86,16 +86,33 @@
 
 .nav{
     background: white;
+    transition: all .5s ease;
 }
 
 .nav.scrolled-nav{
     background: linear-gradient(to right, #21618c, #5dade2, #21618c);
+    padding: 12px 0 12px 0;
     
 }
 
+.nav-hover li a {
+    color: var(--bg-dark-gray);
+    transition: all .5s ease;
+
+}
+
+
+/* link hover effect */
+.nav-hover li a:hover {
+    background: var(--bg-blue7);
+    color: var(--text-white);
+}
+
+
 .active {
-color: #007bff; 
-    font-weight: bold;
+color: var(--text-white); 
+background: var(--bg-blue7);
+font-weight: bold;
 }
 
 /* hero section  linear gradient */

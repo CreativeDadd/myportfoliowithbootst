@@ -8,6 +8,14 @@
     <meta name="generator" content="Hugo 0.84.0">
     <title>Eden & Goshen's Foundation</title>
 
+
+    <!-- fontawesome core CSS -->
+    <!-- our project just needs Font Awesome Solid + Brands -->
+  <link href="assets/fontawesome/css/fontawesome.css" rel="stylesheet">
+  <link href="assets/fontawesome/css/brands.css" rel="stylesheet">
+  <link href="assets/fontawesome/css/solid.css" rel="stylesheet">
+
+     <!-- Bootstrap core CSS -->
     <link rel="canonical" href="https://getbootstrap.com/docs/5.0/examples/album/">
 
     <link rel="icon" href="assets/edenlogo2.jpg" type="image/x-icon">
@@ -66,9 +74,9 @@
     
   </head>
   <body>
-    <nav class="navbar navbar-expand-lg navbar-light  fixed-top py-2 shadow-sm px-5 nav">
+    <nav class="navbar navbar-expand-lg navbar-light  fixed-top shadow-sm px-5 nav">
       <div class="container-fluid">
-        <a class="navbar-brand" style="width: 80px; height: 80px;" href="#"> 
+        <a class="navbar-brand" style="width: 70px; height: 70px;" href="#"> 
           <img src="assets/edenlogo2.jpg" alt="" style="width: 100%; height: auto;">
         
         </a>
@@ -76,12 +84,12 @@
           <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse bin-margin" id="navbarNavDropdown">
-          <ul class="navbar-nav lg-margin-left">
+          <ul class="navbar-nav lg-margin-left nav-hover">
             <li class="nav-item ms-4 fs-5">
               <a class="nav-link active" aria-current="page" href="#home">Home</a>
             </li>
             <li class="nav-item ms-4 fs-5">
-              <a class="nav-link" href="#">Health Care Support</a>
+              <a class="nav-link" href="#healthcare">Health Care Support</a>
             </li>
             <li class="nav-item ms-4 fs-5">
               <a class="nav-link" href="#education">Education Supports</a>
@@ -91,7 +99,7 @@
                 Support Systems
               </a>
               <ul class="dropdown-menu shadow-lg" aria-labelledby="navbarDropdownMenuLink">
-                <li><a class="dropdown-item" href="#">Free Skill Aquisition Programs</a></li>
+                <li><a class="dropdown-item" href="#skills">Free Skill Aquisition Programs</a></li>
                 <li><a class="dropdown-item" href="#">Borehole Drilling</a></li>
                 <li><a class="dropdown-item" href="#">Physically Challenged Cares</a></li>
               </ul>
@@ -103,11 +111,12 @@
 
     
     <!-- $$$$ hero section  $%%% -->
+    <main>
 
     <section class="py-5  text-center container linear-gradient">
       <div class="row py-5">
         <div class="col-lg-6 col-md-8 mx-auto">
-          <h1 class="fw-bold hero-header">Eden & Goshen Foundation.</h1>
+          <h1 class="fw-bold hero-header mt-5">Eden & Goshen Foundation.</h1>
           <p class="lead text-white p-4 shadow-sm subheader">
             "At EdenCare, our mission is clear: to transform lives through clean water access, healthcare, education, and empowerment. We dig wells, offer free medical aid, provide education, and instill skills, fostering self-reliance and sustainable communities. EdenCare believes in creating a world where basic human needs are met, where individuals flourish, and communities thrive. Join us on this journey of compassion and impact."
           </p>
@@ -161,7 +170,7 @@
   
       <!-- START THE FEATURETTES -->
   
-      <hr class="featurette-divider mt-5">
+      <hr class="featurette-divider mt-5" id="skills">
   
       <div class="row featurette mt-5">
         <div class="col-md-7 text-center text-md-start px-5 ">
@@ -175,7 +184,7 @@
         </div>
       </div>
   
-      <hr class="featurette-divider mt-5">
+      <hr class="featurette-divider mt-5" id="healthcare">
   
       <div class="row featurette mt-5">
         <div class="col-md-7 order-md-2 text-center text-md-end px-5">
@@ -298,12 +307,13 @@
 <footer class="text-muted py-5">
   <div class="container">
     <p class="float-end mb-1">
-      <a href="#">Back to top</a>
+      <a href="#"><i class="fa-solid fa-arrow-up text-dark border p-3 rounded-circle shadow"></i></a>
     </p>
-    <p class="mb-1">Album example is &copy; Bootstrap, but please download and customize it for yourself!</p>
-    <p class="mb-0">New to Bootstrap? <a href="/">Visit the homepage</a> or read our <a href="../getting-started/introduction/">getting started guide</a>.</p>
+    <p class="mb-1">The Website is a &copy; of CreativeDAd</p>
+    <p class="mb-0">Check Out our Blogs <a href="">Visit the homepage</a> or read our <a href="../getting-started/introduction/">getting started guide</a>.</p>
   </div>
 </footer>
+</main>
 
 
 
